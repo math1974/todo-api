@@ -1,0 +1,14 @@
+{
+"preset": "ts-jest",
+  "transform": {
+    "^.+\\.(ts)?$": "ts-jest",
+    "^.+\\.(js)$": "babel-jest"
+  },
+  "verbose": true,
+  "collectCoverage": true,
+  "testEnvironment": "node",
+  "coverageDirectory": "coverage",
+  "globalSetup": "<rootDir>/src/tests/global-setup.ts",
+  "globalTeardown": "<rootDir>/src/tests/global-teardown.ts",
+  "testMatch": ["**/**/**.test.ts"]
+}
